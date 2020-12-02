@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0dec1b91-8233-4a26-88d8-3a15d5d62b48" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="ProjectId" id="1l6UTnQE6IawgMJ1323ugpPbqi4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="487" y="195" width="1071" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606917348019">
+      <screen x="55" y="25" width="1865" height="1055" />
+    </state>
+    <state x="487" y="195" width="1071" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/55.25.1865.1055@55.25.1865.1055" timestamp="1606917348019" />
+    <state x="503" y="123" key="SettingsEditor" timestamp="1606917086741">
+      <screen x="55" y="25" width="1865" height="1055" />
+    </state>
+    <state x="503" y="123" key="SettingsEditor/55.25.1865.1055@55.25.1865.1055" timestamp="1606917086741" />
+    <state width="500" height="400" key="SwitcherDM" timestamp="1606918389548">
+      <screen x="55" y="25" width="1865" height="1055" />
+    </state>
+    <state width="500" height="400" key="SwitcherDM/55.25.1865.1055@55.25.1865.1055" timestamp="1606918389548" />
+    <state x="696" y="124" width="597" height="822" key="find.popup" timestamp="1606918058730">
+      <screen x="55" y="25" width="1865" height="1055" />
+    </state>
+    <state x="696" y="124" width="597" height="822" key="find.popup/55.25.1865.1055@55.25.1865.1055" timestamp="1606918058730" />
+  </component>
+</project>
