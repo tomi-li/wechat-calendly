@@ -1,1 +1,1 @@
-web: ./go-gin-boilerplate -e development
+web: ./calendly -e development

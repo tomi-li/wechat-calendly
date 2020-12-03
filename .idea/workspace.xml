@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dec1b91-8233-4a26-88d8-3a15d5d62b48" name="Default Changelist" comment="" />
+    <list default="true" id="0dec1b91-8233-4a26-88d8-3a15d5d62b48" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/router.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +24,9 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1l6UTnQE6IawgMJ1323ugpPbqi4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +38,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -42,17 +60,23 @@
       <screen x="55" y="25" width="1865" height="1055" />
     </state>
     <state x="487" y="195" width="1071" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/55.25.1865.1055@55.25.1865.1055" timestamp="1606917348019" />
-    <state x="503" y="123" key="SettingsEditor" timestamp="1606917086741">
+    <state x="714" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606962546034">
       <screen x="55" y="25" width="1865" height="1055" />
     </state>
-    <state x="503" y="123" key="SettingsEditor/55.25.1865.1055@55.25.1865.1055" timestamp="1606917086741" />
-    <state width="500" height="400" key="SwitcherDM" timestamp="1606918389548">
+    <state x="714" y="331" key="#com.intellij.fileTypes.FileTypeChooser/55.25.1865.1055@55.25.1865.1055" timestamp="1606962546034" />
+    <state x="503" y="123" key="SettingsEditor" timestamp="1606961099541">
       <screen x="55" y="25" width="1865" height="1055" />
     </state>
-    <state width="500" height="400" key="SwitcherDM/55.25.1865.1055@55.25.1865.1055" timestamp="1606918389548" />
-    <state x="696" y="124" width="597" height="822" key="find.popup" timestamp="1606918058730">
+    <state x="503" y="123" key="SettingsEditor/55.25.1865.1055@55.25.1865.1055" timestamp="1606961099541" />
+    <state width="515" height="400" key="SwitcherDM" timestamp="1606964001104">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="515" height="410" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1606961520051" />
+    <state width="515" height="400" key="SwitcherDM/0.25.1920.1055/-1625.25.1625.1025@0.25.1920.1055" timestamp="1606964001104" />
+    <state width="500" height="400" key="SwitcherDM/55.25.1865.1055@55.25.1865.1055" timestamp="1606963708509" />
+    <state x="696" y="124" width="597" height="822" key="find.popup" timestamp="1606962834934">
       <screen x="55" y="25" width="1865" height="1055" />
     </state>
-    <state x="696" y="124" width="597" height="822" key="find.popup/55.25.1865.1055@55.25.1865.1055" timestamp="1606918058730" />
+    <state x="696" y="124" width="597" height="822" key="find.popup/55.25.1865.1055@55.25.1865.1055" timestamp="1606962834934" />
   </component>
 </project>

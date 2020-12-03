@@ -1,9 +1,8 @@
 package server
 
 import (
-	"github.com/gin-gonic/gin"
 	"calendly/controllers"
-	"calendly/middlewares"
+	"github.com/gin-gonic/gin"
 )
 
 func NewRouter() *gin.Engine {
@@ -14,16 +13,16 @@ func NewRouter() *gin.Engine {
 	health := new(controllers.HealthController)
 
 	router.GET("/health", health.Status)
-	router.Use(middlewares.AuthMiddleware())
+	//router.Use(middlewares.AuthMiddleware())
 
 	v1 := router.Group("v1")
 	{
 		userGroup := v1.Group("user")
 		{
 			user := new(controllers.UserController)
-			userGroup.GET("/:id", user.Retrieve)
+			userGroup.GET(":id", user.Retrieve)
 		}
+
 	}
 	return router
-
 }

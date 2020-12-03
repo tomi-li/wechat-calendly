@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/gin-gonic/gin"
 	"calendly/models"
+	"github.com/gin-gonic/gin"
 	"net/http"
 )
 

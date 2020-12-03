@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"os"
 
 	"calendly/config"
@@ -19,4 +20,6 @@ func main() {
 	config.Init(*environment)
 	//db.Init()
 	server.Init()
+
+	gin.SetMode(gin.DebugMode)
 }
