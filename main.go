@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"calendly/config"
+	"calendly/db"
 	"calendly/server"
 )
 
@@ -18,7 +19,7 @@ func main() {
 	}
 	flag.Parse()
 	config.Init(*environment)
-	//db.Init()
+	db.Init()
 	server.Init()
 
 	gin.SetMode(gin.DebugMode)

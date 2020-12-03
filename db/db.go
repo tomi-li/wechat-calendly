@@ -1,25 +1,33 @@
 package db
 
 import (
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"calendly/config"
+	"context"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+	"log"
+	"time"
 )
 
-var db *dynamodb.DynamoDB
+var _client *mongo.Client
+var _ctx *context.Context
 
 func Init() {
 	c := config.GetConfig()
-	db = dynamodb.New(session.New(&aws.Config{
-		Region:      aws.String(c.GetString("db.region")),
-		Credentials: credentials.NewEnvCredentials(),
-		Endpoint:    aws.String(c.GetString("db.endpoint")),
-		DisableSSL:  aws.Bool(c.GetBool("db.disable_ssl")),
-	}))
+	client, err := mongo.NewClient(options.Client().ApplyURI(c.GetString("db.uri")))
+	if err != nil {
+		log.Fatal(err)
+	}
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+	err = client.Connect(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+	//defer client.Disconnect(ctx)
+	_client = client
+	_ctx = &ctx
 }
 
-func GetDB() *dynamodb.DynamoDB {
-	return db
+func GetDB() *mongo.Database {
+	return _client.Database("a")
 }

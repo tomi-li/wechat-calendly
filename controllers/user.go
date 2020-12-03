@@ -25,3 +25,13 @@ func (u UserController) Retrieve(c *gin.Context) {
 	c.Abort()
 	return
 }
+
+func (u UserController) RetrieveAll(c *gin.Context) {
+	users := userModel.ListAll()
+	c.JSON(http.StatusOK, gin.H{"message": "User founded!", "users": users})
+	c.Abort()
+	return
+	//c.JSON(http.StatusBadRequest, gin.H{"message": "bad request"})
+	//c.Abort()
+	//return
+}
