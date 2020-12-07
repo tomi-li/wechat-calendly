@@ -18,7 +18,7 @@ func (u UserController) Retrieve(c *gin.Context) {
 			c.Abort()
 			return
 		}
-		c.JSON(http.StatusOK, gin.H{"message": "User founded!", "user": user})
+		c.JSON(http.StatusOK, gin.H{"message": "success", "data": user})
 		return
 	}
 	c.JSON(http.StatusBadRequest, gin.H{"message": "bad request"})
@@ -28,10 +28,7 @@ func (u UserController) Retrieve(c *gin.Context) {
 
 func (u UserController) RetrieveAll(c *gin.Context) {
 	users := userModel.ListAll()
-	c.JSON(http.StatusOK, gin.H{"message": "User founded!", "users": users})
+	c.JSON(http.StatusOK, gin.H{"message": "Success", "users": users})
 	c.Abort()
 	return
-	//c.JSON(http.StatusBadRequest, gin.H{"message": "bad request"})
-	//c.Abort()
-	//return
 }
