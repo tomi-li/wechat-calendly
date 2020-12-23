@@ -10,12 +10,6 @@
 
 Golang Gin boilerplate with DynamoDB resource. Supports multiple configuration environments.
 
-![](header.jpg)
-
-This project use a [DynamoDB base docker image](https://github.com/vsouza/docker-dynamoDB-local).
-
-Setup DynamoDB dependency:  `docker run -d -p 8080:8080 vsouza/dynamo-local --port 8080`
-
 ### Boilerplate structure
 
 ```

@@ -19,7 +19,7 @@ func main() {
 	}
 	flag.Parse()
 	config.Init(*environment)
-	db.Init()
+	db.InitMysql()
 	server.Init()
 
 	gin.SetMode(gin.DebugMode)

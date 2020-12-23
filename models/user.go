@@ -2,10 +2,6 @@ package models
 
 import (
 	"calendly/db"
-	"context"
-	"go.mongodb.org/mongo-driver/bson"
-	"log"
-	"time"
 )
 
 type User struct {
@@ -20,41 +16,13 @@ type User struct {
 }
 
 func (h User) GetByID(id string) (*User, error) {
-	_db := db.GetDB()
-	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	res, err := _db.Collection("post").InsertOne(ctx, User{ID: id})
-
-	if err != nil {
-		log.Fatal(err)
-	} else {
-		log.Println(res)
-	}
-
-	user := User{
-		ID: id,
-	}
+	user := User{ID: id}
+	db.GetMysql().Create(&user)
 	return &user, nil
 }
 
 func (h User) ListAll() []User {
-	_db := db.GetDB()
-	filter := bson.D{}
-	cur, err := _db.Collection("post").Find(context.TODO(), filter)
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var results []User
-	for cur.Next(context.TODO()) {
-		var elem User
-		err := cur.Decode(&elem)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		results = append(results, elem)
-	}
-
-	return results
+	var users []User
+	db.GetMysql().Find(&users)
+	return users
 }
