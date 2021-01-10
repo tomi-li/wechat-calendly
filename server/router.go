@@ -24,6 +24,13 @@ func NewRouter() *gin.Engine {
 			userGroup.GET("", user.RetrieveAll)
 		}
 
+		eventGroup := v1.Group("event")
+		{
+			event := new(controllers.EventController)
+			eventGroup.GET("", event.Retrieve)
+			eventGroup.POST("", event.Create)
+		}
+
 		taskGroup := v1.Group("task")
 		taskGroup.Use(middlewares.AuthMiddleware())
 		{

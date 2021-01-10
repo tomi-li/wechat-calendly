@@ -2,4 +2,7 @@ server:
   port: :8080
 
 db:
-  uri: mongodb://localhost:27017
+  username: tomi_mysql
+  password: Tomi_mysql
+  uri: sh-cynosdbmysql-grp-a81aj0gg.sql.tencentcdb.com:26776
+  name: calendly

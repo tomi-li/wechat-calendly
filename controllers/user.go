@@ -2,10 +2,12 @@ package controllers
 
 import (
 	"calendly/models"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
+/// An UserController is one of controlller
 type UserController struct{}
 
 var userModel = new(models.User)
